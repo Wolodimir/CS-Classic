@@ -29,9 +29,9 @@ public class TpUsage {
             value += future.get();
         }
 
-        System.out.println(format("Executed by %d s, value : %f",
+        System.out.printf("Executed by %d s, value : %f%n",
                 (System.nanoTime() - start) / (1000_000_000),
-                value));
+                value);
 
         threadPool.shutdown();
     }
