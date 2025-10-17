@@ -1,4 +1,4 @@
-package org.learning.chapter1.encryption;
+package org.learning.chapter1;
 
 import java.util.Random;
 
@@ -35,5 +35,16 @@ public final class Encryption {
             decrypted[i] = (byte) (kp.key1[i] ^ kp.key2[i]);
         }
         return new String(decrypted);
+    }
+
+    public final static class KeyPair {
+
+        public final byte[] key1;
+        public final byte[] key2;
+
+        KeyPair(byte[] key1, byte[] key2) {
+            this.key1 = key1;
+            this.key2 = key2;
+        }
     }
 }

@@ -1,7 +1,10 @@
 package org.learning;
 
 
-public class Main {
+public class LeetTesting {
+
     public static void main(String[] args) {
+
     }
 }
+
