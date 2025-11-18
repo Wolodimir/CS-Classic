@@ -21,12 +21,12 @@ public class MinLadder {
         int leftLadder = buildings[0];
         int rightLadder = buildings[buildings.length - 1];
         for (int i = 1; i <= targetBuild; i++) {
-            if (leftLadder <= Math.abs(buildings[i] - buildings[i - 1]) || buildings[i] < leftLadder) {
+            if (leftLadder < Math.abs(buildings[i] - buildings[i - 1]) || buildings[i] < leftLadder) {
                 leftLadder = buildings[i];
             }
         }
         for (int i = buildings.length - 2; i >= targetBuild; i--) {
-            if (rightLadder <= Math.abs(buildings[i] - buildings[i + 1]) || buildings[i] < rightLadder) {
+            if (rightLadder < Math.abs(buildings[i] - buildings[i + 1]) || buildings[i] < rightLadder) {
                 rightLadder = buildings[i];
             }
         }

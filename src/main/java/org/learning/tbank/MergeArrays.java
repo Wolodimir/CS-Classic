@@ -35,20 +35,20 @@ public class MergeArrays {
         int n1 = a.length, n2 = b.length;
         while (i < n1 && j < n2) {
             if (a[i] < b[j]) {
-                System.out.println(a[i] + " ");
+                System.out.print(a[i] + " ");
                 i++;
             } else if (a[i] > b[j]) {
-                System.out.println(b[j] + " ");
+                System.out.print(b[j] + " ");
                 j++;
             } else {
-                System.out.println(a[i] + " ");
+                System.out.print(a[i] + " ");
                 i++;
                 j++;
             }
         }
 
-        while (i < n1) System.out.println(a[i++] + " ");
-        while (j < n2) System.out.println(b[j++] + " ");
+        while (i < n1) System.out.print(a[i++] + " ");
+        while (j < n2) System.out.print(b[j++] + " ");
     }
 
     public static void showArray(int[] arr) {
